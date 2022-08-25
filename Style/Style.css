@@ -1,0 +1,68 @@
+:root{
+    --primary-color:rgb(8, 207, 207);
+    --container-color:rgb(50, 50, 50);
+    --secondary-color:rgb(51, 50, 50);
+}
+#container{
+    display:block;
+    max-width:700px;
+    background-color:var(--container-color);
+    color:white;
+    padding:2rem;
+    margin:1rem auto;
+    text-align:center;
+    border-radius:2rem;
+}
+#container h1{
+    margin-bottom:2rem;
+}
+#container label{
+display:block;
+font-size:1.5rem;
+color:var(--primary-color);
+margin:1.5rem auto;
+}
+
+#initial-price{
+    display:block;
+    width:70%;
+    padding:1rem;
+    margin:0.5rem auto;
+    font-size:1rem;
+    border-radius:0.5rem;
+    border:2px solid var(--secondary-color);
+    
+}
+#quantity-stock{
+    display:block;
+    width:70%;
+    padding:1rem;
+    margin:0.5rem auto;
+    font-size:1rem;
+    border-radius:0.5rem;
+    border:2px solid var(--secondary-color);
+}
+#current-price{
+    display:block;
+    width:70%;
+    padding:1rem;
+    margin:0.5rem auto;
+    font-size:1rem;
+    border-radius:0.5rem;
+    border:2px solid var(--secondary-color);
+}
+
+#calculate{
+    display:block;
+    padding:0.5rem 1rem;
+    margin:1rem auto;
+    background-color: var(--primary-color);
+    border:2px solid var(--secondary-color);
+    border-radius:0.5rem;
+    font-size:1.2rem;
+}
+
+#output{
+  Font-size:1.6rem;
+  padding:1rem;  
+}
