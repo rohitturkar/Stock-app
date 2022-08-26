@@ -8,20 +8,20 @@ const outputEL = document.querySelector("#output");
 
 calculateBtn.addEventListener("click", function calculateProfitOrLoss() {
     hideoutput();
-    let initialvalue=initialPrice.value;
-    let currentValue=currentPrice.value;
-    let quantityOfStockValue=quantityOfStock.value;
+    let initialValue=Number(initialPrice.value);
+    let currentValue=Number(currentPrice.value);
+    let quantityOfStockValue=Number(quantityOfStock.value);
 
-    if (initialvalue != "" && quantityOfStockValue!= "" && currentValue!= "") {
-      if(initialvalue>currentValue){
-           let loss=(initialvalue-currentValue)*quantityOfStockValue;
-           let lossPercenatge=(loss/initialvalue)*100;
+    if (initialValue != "" && quantityOfStockValue!= "" && currentValue!= "") {
+      if(initialValue>currentValue){
+           let loss=(initialValue-currentValue)*quantityOfStockValue;
+           let lossPercenatge=(loss/initialValue)*100;
            showOutput(`Hey the loss is ${loss} and the percent is ${lossPercenatge} 😥`)
-      }else if(currentValue>initialvalue){
-           let profit=(currentValue-initialvalue)*quantityOfStockValue;
-           let profitPercenatge=(profit/initialvalue)*100;
+      }else if(currentValue>initialValue){
+           let profit=(currentValue-initialValue)*quantityOfStockValue;
+           let profitPercenatge=(profit/initialValue)*100;
            showOutput(`Hey you gain a profit Congratulations!! the profit is ${profit} and the profit percentage is ${profitPercenatge} 🕺🏻😃 `)
-      }else if(currentValue===initialvalue){
+      }else{
         showOutput(`No pain no gain, no gain no pain 😐`)
       }
     }
